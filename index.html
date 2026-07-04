@@ -9,6 +9,7 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/profile.jpeg">
 </head>
 
 <body>
@@ -19,7 +20,11 @@
 
 <div class="logo">Deborah Uwasi</div>
 
-<ul>
+<div class="menu-toggle" id="menu-toggle">
+☰
+</div>
+
+<ul id="nav-links">
 
 <li><a href="index.html">Home</a></li>
 
@@ -184,5 +189,15 @@ Your browser does not support video.
 
 </footer>
 <script src="js/typing.js"></script>
+<script>
+
+const menuToggle = document.getElementById("menu-toggle");
+const navLinks = document.getElementById("nav-links");
+
+menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+});
+
+</script>
 </body>
 </html>
